@@ -17,7 +17,6 @@ const nodeTypes = {
 };
 
 const Flow = ({ input_type }) => {
-  console.log(input_type);
   const initialNodes = [
     {
       id: "0",
