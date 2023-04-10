@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/workflow-designer/static/css/main.007f5faf.css",
-    "main.js": "/workflow-designer/static/js/main.311e175f.js",
+    "main.js": "/workflow-designer/static/js/main.cfa74c5e.js",
     "static/media/loading.gif": "/workflow-designer/static/media/loading.e099feadb5f2e0af5223.gif",
     "index.html": "/workflow-designer/index.html",
     "main.007f5faf.css.map": "/workflow-designer/static/css/main.007f5faf.css.map",
-    "main.311e175f.js.map": "/workflow-designer/static/js/main.311e175f.js.map"
+    "main.cfa74c5e.js.map": "/workflow-designer/static/js/main.cfa74c5e.js.map"
   },
   "entrypoints": [
     "static/css/main.007f5faf.css",
-    "static/js/main.311e175f.js"
+    "static/js/main.cfa74c5e.js"
   ]
 }
