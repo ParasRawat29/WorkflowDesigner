@@ -1,38 +1,161 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
 .App {
   text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/***************   table CSS ******************/
+.tableWrapper {
+  width: 70%;
+  min-width: 500px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+tr {
+  height: 28px;
+  width: 100%;
+}
+
+.headingRow {
+  background: #36304a;
+  color: whitesmoke;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.tableWrapper table thead {
+  font-family: "Roboto Slab", serif;
+}
+
+table > thead > tr > th {
+  padding: 10px;
+  text-align: left;
+}
+
+table > tbody > tr > td {
+  padding: 2px 10px;
+}
+table > tbody > tr {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+table > tbody > tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+table > tbody > tr:hover {
+  transform: scale(1.1);
+}
+/****************** Workflow Page Css  **************/
+
+.workflowPageWrapper header h4 {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.workflowPageWrapper section {
   display: flex;
-  flex-direction: column;
+}
+
+/***********************      Flow Css          ***********/
+.flowWrapper {
+  width: calc(100vw - 250px);
+  height: calc(100vh - 50px);
+}
+.reactflow-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/*****
+
+Modules Css
+****/
+.modulesWrapper {
+  width: 250px;
+  position: relative;
+  border-right: 1px solid #ccc;
+}
+
+.modulesWrapper > h4 {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.module {
+  display: flex;
+  border: 1px solid black;
   align-items: center;
+  border-radius: 10px;
+  margin: 10px 0;
+  height: 50px;
+}
+.module .moduleName {
+  width: 70%;
+  text-align: center;
+  border: 1px solid gray;
+  border-top: none;
+  border-bottom: none;
+}
+.module .types {
+  width: 15%;
+  text-align: center;
+  font-weight: 700;
+}
+.pageHandlerContainer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pageButton {
+  border-radius: 50%;
+  font-size: 1.4rem;
+  background-color: transparent;
+}
+
+.currPage {
+  margin: 0 10px;
+  user-select: none;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+/***** custom node ****/
+
+.customNode {
+  display: flex;
+  width: 140px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.customNode .types {
+  width: 15%;
+  font-size: 12px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.customNode .customNodeName {
+  width: 70%;
+  font-size: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
