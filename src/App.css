@@ -34,7 +34,7 @@ tr {
 }
 table {
   width: 100%;
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-collapse: collapse;
 }
 
@@ -59,13 +59,14 @@ table > tbody > tr:nth-child(even) {
 }
 
 table > tbody > tr:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 /****************** Workflow Page Css  **************/
 
 .workflowPageWrapper header h4 {
   border-bottom: 1px solid #ccc;
   padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .workflowPageWrapper section {
   display: flex;
@@ -89,6 +90,7 @@ Modules Css
   width: 250px;
   position: relative;
   border-right: 1px solid #ccc;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .modulesWrapper > h4 {
@@ -142,6 +144,7 @@ Modules Css
   width: 140px;
   font-size: 1rem;
   border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .customNode .types {

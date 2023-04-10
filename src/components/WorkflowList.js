@@ -18,7 +18,13 @@ function WorkflowList() {
       {loading && <Loader />}
       {!loading && (
         <>
-          <h3 style={{ textAlign: "center", margin: "10px 0" }}>
+          <h3
+            style={{
+              textAlign: "center",
+              margin: "10px 0",
+              fontFamily: "Arial",
+            }}
+          >
             Workflow List
           </h3>
           <ListTable data={data} />
